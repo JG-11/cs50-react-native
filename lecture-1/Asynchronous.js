@@ -24,3 +24,12 @@ setTimeout(printOne, 1000);
 setTimeout(printTwo, 500);
 printThree();
 
+/*
+    How can a language be synchronous and asynchronous at the same time?
+
+    In order to explain that, we have to explain the following concepts:
+        1. Execution stack
+        2. Browser APIs
+        3. Function queue
+        4. Event loop
+*/
