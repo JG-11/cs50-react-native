@@ -28,8 +28,15 @@ printThree();
     How can a language be synchronous and asynchronous at the same time?
 
     In order to explain that, we have to explain the following concepts:
-        1. Execution stack
-        2. Browser APIs
-        3. Function queue
-        4. Event loop
+        1. Execution stack (LIFO structure which puts "layer" by "layer" what is called)
+        2. Browser APIs (It stores by an amount of time the asynchronous calls)
+        3. Function queue (Once the time has happened in Browser API, it moves the commands to the function queue)
+        4. Event loop (It checks for the stack. If the stack is empty, it calls what is in the function queue)
+
+    Some examples of asynchronous functions are:
+        1. setTimeout()
+        2. XMLHttpRequest(), jQuery(), ajax(), fetch()
+        3. Database calls
+
+    Anything that relies on other than JavaScript is asynchronous.
 */
