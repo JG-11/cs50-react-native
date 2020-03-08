@@ -12,10 +12,30 @@ export default class App extends React.Component {
     //this.increaseCount = () => this.setState({ count: this.state.count + 1 });
   }
 
-  increaseCount() {
+  /*increaseCount() {
+    //Here the function queue batches and merges the same states
     this.setState({
       count: this.state.count + 1
     });
+
+    this.setState({
+      count: this.state.count + 1
+    });
+
+    console.log(this.state.count);
+  }*/
+
+  increaseCount() {
+    //Here we actually want the previous state exists beforehand
+    this.setState(prevState => ({
+      count: prevState.count + 1
+    }));
+
+    this.setState(prevState => ({
+      count: prevState.count + 1
+    }));
+
+    console.log(this.state.count);
   }
 
   render() {
