@@ -4,6 +4,7 @@ import Constants from 'expo-constants';
 
 import contacts, {compareNames} from './contacts';
 import Row from './Row';
+import ContactsList from './ContactsList';
 
 export default class App extends React.Component {
   state = {
@@ -14,8 +15,6 @@ export default class App extends React.Component {
   toggleContacts = () => {
     this.setState(prevState => ({showContacts: !prevState.showContacts}))
   }
-
-  renderItem = obj => <Row {...obj.item}/>
 
   sort = () => {
     this.setState(prevState => ({
@@ -30,10 +29,7 @@ export default class App extends React.Component {
         <Button title="toggle contacts" onPress={this.toggleContacts} />
         <Button title="sort" onPress={this.sort} />
         {this.state.showContacts && (
-          <FlatList
-            data={this.state.contacts}
-            renderItem={this.renderItem}
-          />
+          <ContactsList contacts={this.state.contacts}/>
         )}
       </View>
     );
