@@ -57,6 +57,9 @@ class AddContactForm extends React.Component {
     }
 
     render() {
+        //console.error("This is an error");
+        //console.warn("Let's just show a warning");
+        //throw new Error("This is another way of showing an error pop-up");
         return (
             <KeyboardAvoidingView behavior="padding" style={styles.container}>
                 <TextInput 
