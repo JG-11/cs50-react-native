@@ -15,13 +15,21 @@ class AddContactForm extends React.Component {
         isFormValid: false
     }
 
+    componentDidUpdate(prevProps, prevState) {
+        if(this.state.name !== prevState.name || this.state.phone !== prevState.phone) {
+          this.validateForm();
+        }
+    }
+
     handleNameChange = name => {
-        this.setState({name}, this.validateForm)
+        //this.setState({name}, this.validateForm)
+        this.setState({name})
     }
 
     handlePhoneChange = phone => {
         if(+phone >= 0 && phone.length <= 10) {
-            this.setState({phone}, this.validateForm)
+            //this.setState({phone}, this.validateForm)
+            this.setState({phone})
         }     
     }
 
