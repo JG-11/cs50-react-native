@@ -30,13 +30,17 @@ export default class App extends React.Component {
       //Immutability is important
       contacts: [...prevState.contacts].sort(compareNames)
     }))
-  } 
+  }
+  
+  addContact = newContact => {
+    this.setState(prevState => ({
+      contacts: [...prevState.contacts, newContact],
+      showAddContactForm: false
+    }))
+  }
 
   render() {
-    if(this.state.showAddContactForm) {
-      return <AddContactForm />
-    }
-
+    if(this.state.showAddContactForm) return <AddContactForm onSubmit={this.addContact} />
     return (
       <View style={styles.container}>
         <Button title="toggle contacts" onPress={this.toggleContacts} />
