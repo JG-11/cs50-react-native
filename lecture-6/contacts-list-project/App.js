@@ -1,6 +1,6 @@
-import SwitchNavigator from 'examples/SwitchNavigator';
+import Example from './examples/StackNavigator';
 
-export default SwitchNavigator;
+export default Example;
 
 /*import React from 'react';
 import { Button, FlatList, StyleSheet, Text, View } from 'react-native';
