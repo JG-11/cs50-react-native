@@ -1,9 +1,6 @@
-import Example from './examples/StackNavigator';
 
-export default Example;
-
-/*import React from 'react';
-import { Button, FlatList, StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { Button, StyleSheet, View } from 'react-native';
 import Constants from 'expo-constants';
 
 import contacts, {compareNames} from './contacts';
@@ -64,4 +61,4 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     paddingTop: Constants.statusBarHeight,
   },
-});*/
+});
