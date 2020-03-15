@@ -35,13 +35,6 @@ export default class App extends React.Component {
       showAddContactForm: !prevState.showAddContactForm
     }))
   }
-
-  sort = () => {
-    this.setState(prevState => ({
-      //Immutability is important
-      contacts: [...prevState.contacts].sort(compareNames)
-    }))
-  }
   
   addContact = newContact => {
     this.setState(prevState => ({
@@ -56,7 +49,6 @@ export default class App extends React.Component {
       <View style={styles.container}>
         <Button title="toggle contacts" onPress={this.toggleContacts} />
         <Button title="toggle add contact" onPress={this.toggleAddContactForm} />
-        <Button title="sort" onPress={this.sort} />
         {this.state.showContacts && (
           <ContactsList contacts={this.state.contacts} />
         )}
