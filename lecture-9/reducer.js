@@ -1,11 +1,14 @@
-/*const merge = (prev, next) => Object.assign({}, prev, next)
+//What a reducer does, is to take the previous state, and update it (returning a new state)
 
-const reducer = (state, update) => merge(state, update)*/
-
+//Using object spread
 const reducer = (state, update) => ({
     ...state,
     ...update
 })
+
+/*const merge = (prev, next) => Object.assign({}, prev, next)
+
+const reducer = (state, update) => merge(state, update)*/
 
 let state = {}
 state = reducer(state, {foo: 'foo'})
