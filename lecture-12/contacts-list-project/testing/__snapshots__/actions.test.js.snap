@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`updateUser returns an action 1`] = `
+Object {
+  "payload": Object {
+    "name": "test name",
+  },
+  "type": "UPDATE_USER",
+}
+`;
