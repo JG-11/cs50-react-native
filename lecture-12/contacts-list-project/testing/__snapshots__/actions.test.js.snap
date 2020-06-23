@@ -8,3 +8,44 @@ Object {
   "type": "UPDATE_USER",
 }
 `;
+
+exports[`updateUser returns an action handles empty name 1`] = `
+Object {
+  "payload": Object {
+    "name": "",
+  },
+  "type": "UPDATE_USER",
+}
+`;
+
+exports[`updateUser returns an action handles empty object 1`] = `
+Object {
+  "payload": Object {},
+  "type": "UPDATE_USER",
+}
+`;
+
+exports[`updateUser returns an action handles name 1`] = `
+Object {
+  "payload": Object {
+    "name": "test name",
+  },
+  "type": "UPDATE_USER",
+}
+`;
+
+exports[`updateUser returns an action when passed empty name 1`] = `
+Object {
+  "payload": Object {
+    "name": "",
+  },
+  "type": "UPDATE_USER",
+}
+`;
+
+exports[`updateUser returns an action when passed empty object 1`] = `
+Object {
+  "payload": Object {},
+  "type": "UPDATE_USER",
+}
+`;
