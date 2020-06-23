@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1592948422155" clover="3.2.0">
+  <project timestamp="1592948422155" name="All files">
+    <metrics statements="35" coveredstatements="27" conditionals="9" coveredconditionals="7" methods="13" coveredmethods="9" elements="57" coveredelements="43" complexity="0" loc="35" ncloc="35" packages="3" files="4" classes="4"/>
+    <package name="contacts-list-project">
+      <metrics statements="15" coveredstatements="7" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="1"/>
+      <file name="API.js" path="/Users/genaro_almaraz/Desktop/cs50-react-native/lecture-12/contacts-list-project/API.js">
+        <metrics statements="15" coveredstatements="7" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="1"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="27" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="contacts-list-project.components">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <file name="MyButton.js" path="/Users/genaro_almaraz/Desktop/cs50-react-native/lecture-12/contacts-list-project/components/MyButton.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="4" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="contacts-list-project.redux">
+      <metrics statements="19" coveredstatements="19" conditionals="7" coveredconditionals="7" methods="7" coveredmethods="7"/>
+      <file name="actions.js" path="/Users/genaro_almaraz/Desktop/cs50-react-native/lecture-12/contacts-list-project/redux/actions.js">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+      </file>
+      <file name="reducer.js" path="/Users/genaro_almaraz/Desktop/cs50-react-native/lecture-12/contacts-list-project/redux/reducer.js">
+        <metrics statements="11" coveredstatements="11" conditionals="7" coveredconditionals="7" methods="3" coveredmethods="3"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="10" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="4" type="cond" truecount="3" falsecount="0"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="23" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="24" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
