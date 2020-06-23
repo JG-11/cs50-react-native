@@ -1,3 +1,5 @@
+import fetch from 'cross-fetch'
+
 //Abstraction barrier
 const processContact = contact => ({
     name: `${contact.name.first} ${contact.name.last}`,
@@ -28,6 +30,13 @@ export const login = async(username, password) => {
 
     const errMessage = await response.text();
     throw new Error(errMessage);
+}
+
+export const retrieveQuote = async() => {
+    const response = await fetch('https://thesimpsonsquoteapi.glitch.me/quotes')
+    const result = await response.json()
+
+    return result
 }
 
 /*

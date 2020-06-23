@@ -13,3 +13,13 @@ describe('updateUser returns an action', () => {
     expect(actions.updateUser({})).toMatchSnapshot()
   }) 
 })
+
+describe('getQuote returns actions', () => {
+    it('dispatches GET_QUOTE', async() => {
+      const mockDispatch = jest.fn()
+
+      await actions.getQuote()(mockDispatch)
+
+      expect(mockDispatch.mock.calls[0][0].type).toBe(actions.GET_QUOTE)
+    })
+})
